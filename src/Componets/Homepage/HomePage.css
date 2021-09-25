@@ -1,0 +1,55 @@
+.homepage-container{
+    /* display: flex;
+    flex:4; */
+    /* background-color: rebeccapurple; */
+    /* height: 100vh; */
+}
+.sidebar-full{
+    height: 100vh;
+    background-color:blueviolet;
+}
+
+.end-row{
+    height: 60px; 
+    position: fixed; 
+    bottom:0%;
+    width:100%; 
+    background-color: #393838; 
+    opacity: 1;
+    overflow-x: hidden;
+}
+.newchat{
+    background-color: #B4A5A5;
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.input-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button-newchat{
+    text-decoration: none;
+    color: white;
+font-weight: 800;
+}
+
+.button-newchat:hover{
+    scale: 1.5;
+    color:#301B3F;
+    transition: 300ms ease-in-out;
+}
+input{
+    width: 80% !important;
+}
+
+button{
+    margin-left: 10px !important;
+    padding: 5px 40px 5px 40px !important;
+}

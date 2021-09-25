@@ -1,0 +1,47 @@
+.contact-container{
+    background-color:#151515;
+    width: 100%;
+    color: white;
+ }
+
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.user{
+    padding-left: 15px;
+    font-style: italic;
+    font-weight: 600;
+}
+p{
+    font-weight: 200 !important;
+}
+.contact-msg{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+h6{
+    font-weight: 100;
+    padding-left: 35px;
+    padding-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+       h6{
+        visibility: hidden;
+    }
+    .time{
+        visibility: hidden;
+    }
+    .user{
+        font-size:xx-small;
+    }
+  }

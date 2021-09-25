@@ -1,0 +1,29 @@
+.sidebar-container{
+   top: 0;
+   display: flex;
+   flex: 1;
+   z-index: 999;
+    background-color: #3C415C;
+}
+.contact-holder{
+}
+
+h2{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.contact-holder{
+    /* margin-top: 50px; */
+}
+.newchat{
+    bottom: 0;
+    left: 0;
+    margin-left: 0 !important;
+    position: sticky;
+    background-color: #B4A5A5;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
