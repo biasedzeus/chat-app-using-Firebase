@@ -31,7 +31,7 @@ function App() {
    
 
 
-  async function addNewUser() {
+  async function addNewUser(username,fullname) {
     try {
       const docRef = await addDoc(collection(db, "users"), {
         username: "",
@@ -57,7 +57,7 @@ function App() {
           <HomePage />
         </Route>
         <Route exact path="/login">
-          <Login />
+          <Login addNewUser ={addNewUser()} />
         </Route>
       </Switch>
     </div>
