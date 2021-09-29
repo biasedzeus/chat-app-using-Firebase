@@ -1,25 +1,25 @@
-import React from "react";
+import React,{useState} from "react";
 import "./ChatBox.css";
 
 function ChatBox() {
   const [formValue, setFormValue] = useState('');
 
 
-  const sendMessage = async (e) => {
-    e.preventDefault();
+  // const sendMessage = async (e) => {
+  //   e.preventDefault();
 
-    const { uid, photoURL } = auth.currentUser;
+  //   const { uid, photoURL } = auth.currentUser;
 
-    await messagesRef.add({
-      text: formValue,
-      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-      uid,
-      photoURL
-    })
+  //   await messagesRef.add({
+  //     text: formValue,
+  //     createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+  //     uid,
+  //     photoURL
+  //   })
 
-    setFormValue('');
+  //   setFormValue('');
     
-  }
+  // }
   return (
     <div className="col-9  fluid-container message-box">
       <div className="container-left">
