@@ -1,14 +1,25 @@
-import React from "react";
+import React,{useState} from "react";
 import "./HomePage.css";
 import ChatBox from "../ChatBox/ChatBox";
 import SideBar from "../SideBar/SideBar";
+import NewChat from "../NewChat/NewChat";
 import {Link} from "react-router-dom"
 function HomePage() {
-  return (<div class="contafiner">
+  const [newChat, setnewChat] = useState(false);
+
+
+  function handleNewChat() {
+    setnewChat(!newChat);
+  }
+
+
+
+
+
+
+  return (<div class="contakiner">
     <div className="row">
-      <div className="col-3">
-        <SideBar />
-      </div>
+     {newChat ? (<div className="col-3"><SideBar /></div>):(<div className="col-3"><NewChat handleNewChat={handleNewChat} /></div>)}
       <div class="col-9">
         <ChatBox />
       </div>
@@ -17,7 +28,7 @@ function HomePage() {
     <div className="col-3">
       <div class="box-blue">
            <div className="newchat">
-             <Link className="button-newchat">
+             <Link className="button-newchat" onClick={handleNewChat}>
                 NEW CHAT +
                 </Link>
             </div>
