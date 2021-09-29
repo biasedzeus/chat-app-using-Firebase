@@ -44,34 +44,34 @@ function App() {
     }
   }
 
-  function ChatRoom() {
+  // function ChatRoom() {
 
-    const messagesRef = firestore.collection('messages');
-    const query = messagesRef.orderBy('createdAt').limitToLast(25);
+  //   const messagesRef = firestore.collection('messages');
+  //   const query = messagesRef.orderBy('createdAt').limitToLast(25);
   
-    const [messages] = useCollectionData(query, { idField: 'id' });
+  //   const [messages] = useCollectionData(query, { idField: 'id' });
   
-    return (<>
-      <main>
-        {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
-      </main>
+  //   return (<>
+  //     <main>
+  //       {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
+  //     </main>
   
-    </>)
-  }
+  //   </>)
+  // }
 
   
-  function ChatMessage(props) {
-    const { text, uid, photoURL } = props.message;
+  // function ChatMessage(props) {
+  //   const { text, uid, photoURL } = props.message;
   
-    const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
+  //   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
   
-    return (<>
-      <div className={`message ${messageClass}`}>
-        <img src={photoURL} />
-        <p>{text}</p>
-      </div>
-    </>)
-  }
+  //   return (<>
+  //     <div className={`message ${messageClass}`}>
+  //       <img src={photoURL} />
+  //       <p>{text}</p>
+  //     </div>
+  //   </>)
+  // }
 
   
 
