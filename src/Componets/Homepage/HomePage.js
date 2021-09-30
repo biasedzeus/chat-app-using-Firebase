@@ -8,10 +8,7 @@ function HomePage() {
   const [newChat, setnewChat] = useState(false);
 
 
-  function handleNewChat() {
-    setnewChat(!newChat);
-  }
-
+ 
 
 
 
@@ -19,7 +16,8 @@ function HomePage() {
 
   return (<div class="contakiner">
     <div className="row">
-     {newChat ? (<div className="col-3"><SideBar /></div>):(<div className="col-3"><NewChat handleNewChat={handleNewChat} /></div>)}
+     {newChat ? (<div className="col-3"><SideBar /></div>):(<div className="col-3"><NewChat /></div>)}
+
       <div class="col-9">
         <ChatBox />
       </div>
@@ -28,7 +26,8 @@ function HomePage() {
     <div className="col-3">
       <div class="box-blue">
            <div className="newchat">
-             <Link className="button-newchat" onClick={handleNewChat}>
+             <Link className="button-newchat" >
+
                 NEW CHAT +
                 </Link>
             </div>
