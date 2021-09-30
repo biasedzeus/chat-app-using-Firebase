@@ -2,11 +2,14 @@ import React from 'react'
 import Contact from '../Contact/Contact'
 import {Link} from "react-router-dom"
 
-function NewChat({handleNewChat}) {
+function NewChat() {
     return (
         <div>
         
-           <Link onClick={handleNewChat}> <Contact/></Link>
+           <li>Aman</li>
+           <li>Alex</li>
+           <li>Abby</li>
+           <li>frank</li>
             
         </div>
     )
